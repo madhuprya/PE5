@@ -52,11 +52,24 @@ public class MainTest {
         studentList.add(student5);
         studentList.add(student6);
         studentList.add(student7);
+    System.out.println("***********Before Sorting**************");
+        for (Student s:studentList
+             ) {
+            System.out.println(s);
 
-
-        new StudentSorter().sortingStudent(studentList);
-
-
+        }
+        System.out.println("*************After Sorting*****************");
+       System.out.println(new MainTest().sortingStudent(studentList));
 
     }
+    public List<Student> sortingStudent(List<Student> sList){
+        Collections.sort(sList, new StudentSorter());
+        Collections.reverse(sList);
+        List<Student> stList=new ArrayList<>();
+        for(Student student : sList) {
+            stList.add(student);
+        }
+        return stList;
+    }
+
 }

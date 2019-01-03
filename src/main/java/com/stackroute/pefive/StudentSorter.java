@@ -16,28 +16,19 @@ public class StudentSorter implements Comparator<Student> {
 
             if(sortAge == 0) {
                 return ((sortName == 0) ? sortId : sortName);
+              /*  if(sortName==0){
+                    return sortId;
+
+                }else
+                {
+                    return sortName;
+                }*/
             }
             else {
                 return sortAge;
             }
         }
 //          Collections.sort(List<Student> sList, compare(Student s1,Student s2));
-    public List<Student> sortingStudent(List<Student> sList){
-        Collections.sort(sList,
-                new StudentSorter());
-        Collections.reverse(sList);
-        List<Student> stList=new ArrayList<>();
-        Student ss=null;
-        for(Student student : sList) {
-            //System.out.println(student);
-            stList.add(student);
-
-        }
-    //    System.out.println(stList);
-            return stList;
-
-
-    }
 
 
 }
