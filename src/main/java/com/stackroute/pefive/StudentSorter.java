@@ -1,5 +1,6 @@
 package com.stackroute.pefive;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -21,17 +22,19 @@ public class StudentSorter implements Comparator<Student> {
             }
         }
 //          Collections.sort(List<Student> sList, compare(Student s1,Student s2));
-    public Student sortingStudent(List<Student> sList){
+    public List<Student> sortingStudent(List<Student> sList){
         Collections.sort(sList,
                 new StudentSorter());
         Collections.reverse(sList);
+        List<Student> stList=new ArrayList<>();
         Student ss=null;
         for(Student student : sList) {
             //System.out.println(student);
-            ss=student;
+            stList.add(student);
 
         }
-            return ss;
+    //    System.out.println(stList);
+            return stList;
 
 
     }

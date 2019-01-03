@@ -70,15 +70,10 @@ public class StudentSorterTest {
     expected.add(studentObj4);
     expected.add(studentObj2);
     expected.add(studentObj1);
-        Student s1=null;
-        for (Student s:expected
-             ) {
-            s1=s;
-
-        }
+ //   System.out.println(expected);
 
 
-        assertEquals(s1,new StudentSorter().sortingStudent(studentList));
+        assertEquals(expected,new StudentSorter().sortingStudent(studentList));
 
 
     }
