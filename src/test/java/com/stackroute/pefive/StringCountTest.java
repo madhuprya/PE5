@@ -1,5 +1,6 @@
-package com.stackroute;
+package com.stackroute.pefive;
 
+import com.stackroute.StringCount;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.util.Map;
 import static org.junit.Assert.*;
 
 public class StringCountTest {
-    StringCount stringCountTest;
+    com.stackroute.StringCount stringCountTest;
     @Before
     public void setUp() throws Exception {
         stringCountTest=new StringCount();
