@@ -30,12 +30,8 @@ public class ReplaceElementTest {
         arrayList1.add("Berry");
 
         ArrayList<String> arrayList2=new ArrayList<String>();
-        arrayList2.add("Apple");
-        arrayList2.add("Muskmelon");
-        arrayList2.add("Melon");
-        arrayList2.add("Berry");
 
-        assertEquals(arrayList2,replaceElement.replaceElement(arrayList1,"Grape","Muskmelon"));
+        assertEquals(arrayList2,replaceElement.emptyElement(arrayList1));
     }
 
     @Test

@@ -11,4 +11,13 @@ public class ReplaceElement {
         return elements;
 
     }
+
+
+    ArrayList<String> emptyElement(ArrayList<String> elements){
+
+        elements.removeAll(elements);
+        System.out.println(elements);
+        return elements;
+
+    }
 }
