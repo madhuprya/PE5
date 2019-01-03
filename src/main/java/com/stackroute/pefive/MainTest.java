@@ -52,15 +52,20 @@ public class MainTest {
         studentList.add(student5);
         studentList.add(student6);
         studentList.add(student7);
-    System.out.println("***********Before Sorting**************");
-        for (Student s:studentList
+    System.out.println("***********Before Sorting***********");
+        for (Student studentList1:studentList
              ) {
-            System.out.println(s);
+            System.out.println(studentList1);
 
         }
-        System.out.println("*************After Sorting*****************");
-       System.out.println(new MainTest().sortingStudent(studentList));
+        System.out.println("*************After Sorting***************");
+     //  System.out.println(new MainTest().sortingStudent(studentList));
+        List<Student> studentList2=new MainTest().sortingStudent(studentList);
+        for (Student studentList3:studentList
+        ) {
+            System.out.println(studentList3);
 
+        }
     }
     public List<Student> sortingStudent(List<Student> sList){
         Collections.sort(sList, new StudentSorter());
